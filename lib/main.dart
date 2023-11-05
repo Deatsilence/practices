@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practices/feature/short_but_gold/view/make_safe_custom_user_view.dart';
+import 'package:practices/feature/short_but_gold/view/safe_json_decode_book_view.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Material App',
-      home: MakeSafeCustomUserView(),
+      home: SafeJsonDecodeBookView(),
     );
   }
 }

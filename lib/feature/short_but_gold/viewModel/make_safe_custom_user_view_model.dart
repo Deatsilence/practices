@@ -2,7 +2,7 @@ import 'package:practices/feature/short_but_gold/extension/make_safe_custom_exte
 import 'package:practices/feature/short_but_gold/model/user_model.dart';
 import 'package:practices/feature/short_but_gold/service/user_service.dart';
 
-class MakeSafeCustomUserViewModel {
+final class MakeSafeCustomUserViewModel {
   Future<List<User>> makeSafeList() async {
     final users = await UserNetworkService.instance.getUsers();
     if (users.isEmpty) {
