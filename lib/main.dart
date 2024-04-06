@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practices/feature/async_operations/async_view.dart';
 import 'package:practices/feature/widget/drop_down_menu.dart';
 
 void main() => runApp(const MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Material App',
-      home: DropDownMenuView(),
+      home: AsyncView(),
     );
   }
 }
