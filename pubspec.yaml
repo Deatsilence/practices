@@ -14,10 +14,15 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+
+  # Utility
   logger: ^2.0.2+1
   gap: ^3.0.1
   meta: ^1.11.0
   benchmark_harness: ^2.2.2
+
+  # State
+  flutter_bloc: ^8.1.5
 
 dev_dependencies:
   flutter_test:
