@@ -23,6 +23,8 @@ dependencies:
 
   # State
   flutter_bloc: ^8.1.5
+  http: ^1.2.1
+  dio: ^5.4.3+1
 
 dev_dependencies:
   flutter_test:
