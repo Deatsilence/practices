@@ -23,6 +23,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:practices/feature/bloc/counter_cubit.dart';
 import 'package:practices/feature/bloc/home_view.dart';
 import 'package:practices/feature/deep_widgets/baseline_view.dart';
+import 'package:practices/feature/deep_widgets/carousel_view.dart';
 import 'package:practices/feature/deep_widgets/constrained_box_view.dart';
 import 'package:practices/feature/deep_widgets/custom_list_wheel_scroll_view.dart';
 import 'package:practices/feature/deep_widgets/custom_multi_child_layout_view.dart';
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const BaselineView(),
+      home: const CarouselViewTest(),
       // BlocProvider<CounterCubit>(
       //   create: (context) => CounterCubit(),
       //   child: const HomeView(

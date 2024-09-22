@@ -7,9 +7,11 @@ final class BaselineView extends StatefulWidget {
   State<BaselineView> createState() => _BaselineViewState();
 }
 
-class _BaselineViewState extends State<BaselineView> {
+class _BaselineViewState extends State<BaselineView> with LoadingStateFul {
   @override
   Widget build(BuildContext context) {
+    changeLoading();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('BaselineView'),
@@ -68,5 +70,15 @@ class _BaselineViewState extends State<BaselineView> {
         ],
       ),
     );
+  }
+}
+
+mixin LoadingStateFul<T extends StatefulWidget> on State<T> {
+  bool isLoading = false;
+
+  void changeLoading() {
+    setState(() {
+      isLoading = !isLoading;
+    });
   }
 }
